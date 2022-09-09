@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <title>Blog</title>
+
+</head>
+
+
+
+<body>
+
+<h3>Blogger</h3>
+
+<div class="grid">
+
+    <% for (let blog of blogs) { %>
+
+        <article class="card product-item">
+
+            <header class="card__header">
+
+                <h1 class="product__title">
+
+                    <%= blog.id %>
+
+                </h1>
+
+            </header>
+
+
+            <div class="card__content">
+
+                <h2 class="product__price">$
+
+                    <%= blog.title %>
+
+                </h2>
+                <h2 class="product__price">$
+
+                    <%= blog.content %>
+
+                </h2>
+
+
+            </div>
+
+
+        </article>
+
+    <% } %>
+
+</div>
+
+</body>
+
+
+
+</html>
